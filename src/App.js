@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // Import Styles
 import "./styles/app.scss";
 // Adding components
@@ -8,11 +8,19 @@ import Song from "./components/Song";
 import data from "./util";
 
 function App() {
+  // state
+  const [songs, setSongs] = useState(data());
+  const [currentSong, setCurrentsong] = useState(songs[0]);
+  const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="App">
-      <h1>Vybe</h1>
-      <Song />
-      <Player />
+      <h1 className="vybe">Vybe</h1>
+      <Song currentSong={currentSong} />
+      <Player
+        setIsPlaying={setIsPlaying}
+        isPlaying={isPlaying}
+        currentSong={currentSong}
+      />
     </div>
   );
 }

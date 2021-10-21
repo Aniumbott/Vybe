@@ -4,5 +4,29 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: lobster;
+  src: url("../fonts/Lobster-Regular.ttf");
+}
+
+@font-face {
+  font-family: asap;
+  src: url("../fonts/Asap-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: asap, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(19, 19, 19);
+}
+
+.vybe {
+  font-family: lobster, sans-serif;
+  font-weight: 300;
+}
 @import "./song";
 @import "./player";
