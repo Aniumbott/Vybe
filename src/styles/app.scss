@@ -10,12 +10,12 @@
 }
 
 @font-face {
-  font-family: asap;
-  src: url("../fonts/Asap-VariableFont_wght.ttf");
+  font-family: monstrat;
+  src: url("../fonts/Montserrat-Thin.ttf");
 }
 
 body {
-  font-family: asap, sans-serif;
+  font-family: monstrat, sans-serif;
 }
 
 h1,
@@ -28,5 +28,7 @@ h3 {
   font-family: lobster, sans-serif;
   font-weight: 300;
 }
+
 @import "./song";
 @import "./player";
+@import "./library";
