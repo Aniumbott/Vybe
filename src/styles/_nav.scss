@@ -1,0 +1,36 @@
+nav {
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    font-size: 2rem;
+    font-family: lobster, sans-serif;
+    font-weight: 300;
+  }
+  button {
+    padding: 0.8rem;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    background: rgb(43, 43, 43);
+    color: white;
+    z-index: 5;
+    transition: all 0.3s ease;
+    &:hover {
+      background: white;
+      color: rgb(43, 43, 43);
+      box-shadow: 0 0 20px rgb(196, 196, 196);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+  }
+}

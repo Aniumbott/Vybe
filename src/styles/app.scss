@@ -24,11 +24,27 @@ h3 {
   color: rgb(19, 19, 19);
 }
 
-.vybe {
-  font-family: lobster, sans-serif;
-  font-weight: 300;
+.App {
+  transition: all 0.5s ease;
+}
+
+.library-active {
+  margin-left: 20rem;
 }
 
 @import "./song";
 @import "./player";
 @import "./library";
+@import "./nav";
+
+@media screen and (max-width: 950px) {
+  .App {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .library-active {
+    margin: 0;
+  }
+}

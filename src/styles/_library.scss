@@ -10,6 +10,9 @@
   h2 {
     padding: 2rem;
   }
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .library-song {
@@ -48,4 +51,18 @@
 
 .selected {
   background: rgb(165, 210, 252);
+  &:hover {
+    background: rgb(165, 210, 252);
+  }
+}
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
 }
