@@ -4,10 +4,29 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  h1 {
-    font-size: 2rem;
-    font-family: lobster, sans-serif;
-    font-weight: 300;
+  .logo {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    a {
+      height: 100%;
+      img {
+        margin: auto;
+        height: 100%;
+      }
+    }
+    .logo-text {
+      margin: auto 1rem;
+      font-size: 2rem;
+      font-family: lobster, sans-serif;
+      font-weight: 300;
+      color: black;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #b544ff;
+      }
+    }
   }
   button {
     padding: 0.8rem;

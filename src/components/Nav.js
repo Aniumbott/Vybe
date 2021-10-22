@@ -5,7 +5,17 @@ import { faMusic } from "@fortawesome/free-solid-svg-icons";
 const Nav = ({ libraryStatus, setLibraryStatus }) => {
   return (
     <nav>
-      <h1>Vybe</h1>
+      <div className="logo">
+        <a href="https://vybe-a-music-player.herokuapp.com/">
+          <img src="../Vybe-logo.png" alt="Vybe logo" />
+        </a>
+        <a
+          className="logo-text"
+          href="https://vybe-a-music-player.herokuapp.com/"
+        >
+          Vybe
+        </a>
+      </div>
       <button onClick={() => setLibraryStatus(!libraryStatus)}>
         Library&nbsp;
         <FontAwesomeIcon icon={faMusic} />
